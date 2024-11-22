@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth and Dare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <button id="reset-btn">Reset Game</button>
+        
+        <div id="start-screen">
+            <h1>Welcome to Truth and Dare</h1>
+            <button id="start-btn">Start Game</button>
+        </div>
+        
+        <div id="player-setup" class="hidden">
+            <h2>Enter the number of players:</h2>
+            <input type="number" id="player-count" min="2" placeholder="Number of players" />
+            <button id="submit-player-count">Next</button>
+            <div id="player-names" class="hidden">
+                <h2>Enter player names:</h2>
+                <div id="name-inputs"></div>
+                <button id="submit-names">Start Playing</button>
+            </div>
+        </div>
+        
+        <div id="game-screen" class="hidden">
+            <div id="circle-container">
+                <div id="circle"></div>
+                <button id="spin-btn" class="spin-btn">Spin Bottle</button>
+                <div id="bottle"></div>
+            </div>
+            <div id="message"></div>
+            <div id="truth-dare-options" class="hidden">
+                <button id="truth-btn">Truth</button>
+                <button id="dare-btn">Dare</button>
+            </div>
+            <button id="task-complete-btn" class="hidden">Task Completed</button>
+            <button id="next-turn-btn" class="hidden">Next Turn</button>
+        </div>
+    </div>
+    <!-- End Message -->
+    <div id="end-message" class="hidden"></div>
+    <button id="reset-btn" class="hidden">Reset</button>
+    <script src="script.js"></script>
+</body>
+</html>
